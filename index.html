@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Op1um Proxy Demo</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div id="header-container">
+        <a href="https://www.google.com" id="logo">Op1um Demo</a>
+        <form id="upper-search-form">
+          <input type="text" id="upper-search-input" placeholder="Search Or Type A URL">
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+      </div>
+    </header>
+    <main>
+      <div id="search-container">
+        <form id="search-form">
+          <input type="text" id="search-input" placeholder="Search Or Type A URL">
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+      </div>
+      <iframe id="proxy-frame" src=""></iframe>
+    </main>
+    <script src="uv/uv.bundle.js"></script>
+    <script src="uv/uv.config.js"></script>
+    <script src="uv/uv.handler.js"></script>
+    <script src="uv/uv.sw.js"></script>
+  </body>
+</html>
